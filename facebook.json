@@ -1,0 +1,15 @@
+{
+    "user": {
+        "short_token": "<>",
+        "long_token": "None"
+    },
+    "app": {
+        "id": "<>",
+        "secret": "<>"
+    },
+    "page": {
+        "token": "<>",
+        "id": "<>"
+    },
+    "sdk_version": "3.0"
+}
