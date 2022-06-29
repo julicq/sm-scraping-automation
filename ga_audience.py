@@ -58,7 +58,7 @@ response = api_client.reports().batchGet(
 print(response)
 
 # Parse the response of API
-def prase_response(report):
+def parse_response(report):
 
     """Parses and prints the Analytics Reporting API V4 response"""
     # Initialize results, in list format because two dataframes might return
@@ -112,6 +112,6 @@ def prase_response(report):
     return result_list
 
 response_data = response.get('reports', [])[0]
-print(prase_response(response_data)[0])
+print(parse_response(response_data)[0])
 
-prase_response(response_data)[0].to_csv('FB_biesse_audience.csv')
+parse_response(response_data)[0].to_csv('FB_biesse_audience.csv')
